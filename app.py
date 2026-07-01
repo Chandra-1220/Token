@@ -10,7 +10,7 @@ st.write("Enter text below to see the generated tokens and their token IDs.")
 # Load tokenizer only once
 @st.cache_resource
 def load_tokenizer():
-    return AutoTokenizer.from_pretrained("gpt2")
+    return AutoTokenizer.from_pretrained("google/gemma-4-12B-it")
 
 tokenizer = load_tokenizer()
 
